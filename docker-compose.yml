@@ -1,7 +1,7 @@
 version: '3'
 services:
   redis:
-    image: "redis"
+    image: "redis:alpine"
     container_name: db
     volumes:
       - ./redis_conf/redis.conf:/etc/redis/redis.conf
@@ -9,7 +9,7 @@ services:
       - ./redis_log:/redis_log
     entrypoint: redis-server --appendonly yes
   nginx:
-    image: "nginx"
+    image: "nginx:alpine"
     restart: always
     container_name: ng
     ports:

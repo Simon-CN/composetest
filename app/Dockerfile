@@ -1,2 +1,2 @@
-FROM node
+FROM node:alpine
 WORKDIR '/var/www/app'
