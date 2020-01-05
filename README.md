@@ -235,3 +235,7 @@ $ docker-compose restart <service>
 2. 执行dockerd &启动docker-engine
 3. 执行docker load < image.docker导入镜像
 4. clone工程代码，进入主目录，执行docker-compose up --build
+
+## 代码更新
+1. pull最新代码
+2. 执行docker-compose restart app
