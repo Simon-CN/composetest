@@ -228,3 +228,10 @@ $ docker-compose stop
 ## 重启
 $ docker-compose restart <service>
 ```
+
+## 新机器部署
+
+1. 把docker和docker-compose的bin包导入
+2. 执行dockerd &启动docker-engine
+3. 执行docker load < image.docker导入镜像
+4. clone工程代码，进入主目录，执行docker-compose up --build
