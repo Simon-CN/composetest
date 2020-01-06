@@ -130,6 +130,7 @@ app.listen(PORT, () => {
 在app目录下创建Dockerfile文件，设置node版本。
 ```dockerfile
 FROM node:alpine
+WORKDIR '/var/www/app'
 ```
 
 在主目录下创建docker-compose.yml，写入工程配置信息。
